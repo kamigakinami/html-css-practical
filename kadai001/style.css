@@ -1,0 +1,212 @@
+/* PC、スマホ共通 */
+* {
+    box-sizing: border-box;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+p {
+    font-size: 18px;
+}
+
+body {
+    font-family: "Noto Sans JP", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 34px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+/* ナビゲーション */
+header {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 auto;
+    max-width: 960px;
+    
+}
+
+h1 {
+    border: solid 1px;
+    padding: 3px 19px;
+}
+
+#nav {
+    font-size: 34px;
+    font-weight: bold;
+    margin: auto 0;
+}
+
+#nav > a {
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#nav > a:hover {
+    text-decoration: underline 1px;
+}    
+    
+
+/* メインビジュアル */
+#main-visual img {
+    width: 100vw;
+    height: 587.76px;
+    top: 140px;
+    margin: 0;
+}
+
+/* アバウト */
+#about {
+    width: 820px;
+    height: 402px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+#about > h2 {
+    text-align: center;
+}
+
+#about-profile > img {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+#about-profile {
+    display: flex;
+}
+
+#text-profile {
+    width: 419px;
+    position: absolute;
+    top: 172px;
+    left: 401px;
+}
+
+
+/* ワークス */
+#works {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+#works > h2 {
+    text-align: center;
+}
+
+#works-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.works-photo {
+    width: 32%;
+}
+
+.works-photo > img {
+    width: 100%;
+}
+
+/* フッター */
+footer p {
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* スマートフォン用のスタイル */
+@media screen and (max-width: 767px) {
+    header {
+        margin: 0 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-left: 0;
+    }
+
+    #nav > a {
+        font-size: 21px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+
+    /* メインビジュアル */
+    #main-visual img {
+        width: 100%;
+        max-height: 154px;
+    }
+
+    /* アバウト */
+    #about {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    #about-profile > img {
+        margin: 0 auto;
+    }
+
+    #about-profile {
+        flex-direction: column;
+        width: 100%;
+        margin: 50px 0 0 0;
+    }
+
+    h3 {
+        margin: 0 0 0 20px;
+    }
+
+    #text-profile {
+        position: static;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* ワークス */
+    #works {
+        width: 100%;
+        height: auto;
+    }
+
+    #works-flex {
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+
+    }
+
+    .works-photo {
+        width: 95%;
+        margin: 30px auto 0 auto;
+        text-align: center;
+    }
+
+    .works-photo > img, .works-photo > p {
+        width: 100%;
+  }
+
+    .works-photo > p {
+        margin-top: 0;
+    }
+
+    footer > p {
+        margin: 50px auto 10px auto;
+    }
+}
